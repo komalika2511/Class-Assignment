@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+    <h1>This is Class based Asssignment......😊</h1>
+    <script>
+        class Cars // class
+        {
+            constructor(name)  // passing the constructor of parameter as "name"
+            {
+                this.carname = name;
+                console.log("I have a " + this.carname + ", " + "it is a Mustang🚘 .");
+            }
+            details()  // DECLARING THE METHOD()
+            {
+                document.write(" <h1> I have a " + this.carname + ", " + "it is a Mustang🚘 . </h1>");
+            }
+        }
+        class abc extends Cars    // INHERITE THE CLASS
+        {
+            details() {
+                super.details();
+                console.log("I have a " + this.carname + ", " + "it is a Mustang🚘 .");
+            }
+        }
+        let result = new Cars("BMW");  // VALUES PASSING TO THE PARAMETR OF "name".....
+        result.details();
+    </script>
+</body>
+
+</html>
